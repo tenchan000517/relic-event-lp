@@ -9,6 +9,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://event.relic-v.com"),
   title: "RELiC THE TOWER",
   description: "RELiC初のWeb3の祭典が東京タワーで開幕！国内の注目プロジェクトが集結し、誰でも参加できる新時代を感じる特別な体験があなたを待っています。",
   openGraph: {

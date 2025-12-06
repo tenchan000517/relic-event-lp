@@ -1,11 +1,29 @@
 export default function Home() {
   // TODO: 画像のパスとリンクは後で差し替え
-  const ticketUrl = "#"; // チケット購入リンク（販売開始後に有効化）
-  // const ticketUrl = "https://ticket.red-brand.jp/my-page/tickets/purchase/select-date/?ticket_id=574"; // 本番URL
+  // const ticketUrl = "#"; // チケット購入リンク（販売開始後に有効化）
+  const ticketUrl = "https://ticket.red-brand.jp/my-page/tickets/purchase/select-date/?ticket_id=574"; // 本番URL
   const officialUrl = "https://linktr.ee/relic758"; // 公式リンク
   const lineUrl = "https://line.me/R/ti/p/@511vjcrn"; // 公式LINE
+  const aebUrl = "https://x.com/bun_cap404"; // A.E.B
   const villainUrl = "https://0xmavillain.com/"; // $villain
   const web3moneyUrl = "https://m.youtube.com/@web3money_relic"; // WEB3MONEY
+  const sixUrl = "https://form.six-heritage.com/"; // Six
+  const kidouUrl = "https://x.com/kidou_pj?s=21&t=2DhXpdRacbysc_KfbP2img"; // KIDOU
+  const nitroidUrl = "https://lit.link/nanochan00art"; // NITROID
+  const pichdaoUrl = "https://pichan-store.web.app/whitepaper"; // PICH DAO
+  const yugienUrl = "https://yu-gi-yn.com/ja/"; // 遊戯苑
+  const redUrl = "https://tokyotower.red-brand.jp/"; // RED゜
+  const romacoUrl = "https://lit.link/Romaco"; // ロマ子
+  const financieUrl = "https://financie.jp/"; // Financie
+  const lombabyUrl = "https://www.lombaby.io/"; // lombaby
+  const niwaEelsUrl = "https://piku.page/@nrium"; // 架争9区＆NIWA EELS
+  const jonyUrl = "https://x.com/ks3901ks?s=21"; // ジョニー
+  const crowmakerUrl = "https://x.com/crowmakerjp"; // CROW Maker
+  const coinmusumeUrl = "https://linktr.ee/coinmusme1"; // coinmusume
+  const yayUrl = "https://portal.yay.space/ja"; // Yay!
+  const heal3Url = "https://heal3.com/"; // HEAL3
+  const kazmaiUrl = "https://lit.link/kazmai"; // kazmai
+  const worldUrl = "https://world.org/ja-jp"; // World
 
   return (
     <div className="min-h-screen bg-white">
@@ -83,8 +101,13 @@ export default function Home() {
             </h2>
 
             {/* 画像なしバージョン */}
-            <div className="text-lg md:text-xl text-[#0D4F84] leading-relaxed space-y-4 px-8 md:px-16">
-              <p>RELiC初のWeb3の祭典が東京タワーで開幕！国内の注目プロジェクトが集結し、誰でも参加できる新時代を感じる特別な体験があなたを待っています。</p>
+            <div className="text-lg md:text-xl text-black font-bold leading-relaxed px-2 md:px-16 text-center">
+              <p><span className="text-3xl md:text-4xl text-gray-400">RELiC</span>初の<span className="text-3xl md:text-4xl text-lime-600">Web3</span>の祭典が<br className="md:hidden" /><span className="text-3xl md:text-4xl text-red-600">東京タワー</span>で開幕！</p>
+              <p>アミューズメント施設</p>
+              <p><a href={redUrl} target="_blank" rel="noopener noreferrer" className="text-red-600 hover:text-red-700 underline font-bold text-3xl md:text-4xl transition-colors">RED゜</a>も利用できる！</p>
+              <p className="mb-8">大人も子供もみんなで楽しもう！</p>
+              <p>国内の注目プロジェクトが集結し、誰でも参加できる<span className="text-3xl md:text-4xl text-purple-600">新時代</span>を感じる特別な体験があなたを待っています。</p>
+              <p><span className="text-3xl md:text-4xl text-yellow-500">最高</span>の1日にしよう！</p>
             </div>
 
             {/* 画像ありバージョン（必要時にコメント解除）
@@ -129,11 +152,12 @@ export default function Home() {
                   className="w-full aspect-square object-cover rounded-lg shadow-md"
                 />
               </a>
-              <div className="w-full aspect-square flex items-center justify-center bg-white border-2 border-[#0D4F84] rounded-lg shadow-md">
-                <p className="font-bold text-[#0D4F84] text-sm md:text-base">AEB</p>
-              </div>
-              <div className="w-full aspect-square flex items-center justify-center bg-white border-2 border-[#0D4F84] rounded-lg shadow-md">
-                <p className="font-bold text-[#0D4F84] text-xs md:text-base text-center px-2">BOSAI NFT CLUB</p>
+              <div className="w-full">
+                <img
+                  src="/img/logo/bonsai.jpg"
+                  alt="BOSAI NFT CLUB"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
               </div>
               <a
                 href={villainUrl}
@@ -159,9 +183,321 @@ export default function Home() {
                   className="w-full aspect-square object-cover rounded-lg shadow-md"
                 />
               </a>
-              <div className="w-full aspect-square flex items-center justify-center bg-gray-100 border-2 border-gray-300 rounded-lg shadow-md">
-                <p className="font-bold text-gray-400 text-sm md:text-base">coming soon</p>
+              <a
+                href={sixUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/six.jpg"
+                  alt="Six"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <a
+                href={kidouUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/kidou.jpg"
+                  alt="KIDOU"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <a
+                href={nitroidUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/nitoroid.png"
+                  alt="NITROID"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <a
+                href={pichdaoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/pichdao.jpg"
+                  alt="PICH DAO"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <a
+                href={financieUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/financie.jpg"
+                  alt="Financie"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <a
+                href={lombabyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/lombaby.jpg"
+                  alt="lombaby"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <a
+                href={coinmusumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/coinmusume.jpg"
+                  alt="coinmusume"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <a
+                href={niwaEelsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/niwaeels.jpg"
+                  alt="架争9区＆NIWA EELS"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <a
+                href={jonyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/jony.jpg"
+                  alt="ジョニー"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <a
+                href={crowmakerUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/crowmaker.jpg"
+                  alt="CROW Maker"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <a
+                href={heal3Url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/HEAL-III_logo2.png"
+                  alt="HEAL3"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <a
+                href={kazmaiUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/kazumai.jpg"
+                  alt="kazmai"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <a
+                href={worldUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/world.jpg"
+                  alt="World"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SPECIAL */}
+      <section
+        className="relative bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat bg-fixed bg-white"
+        style={{ backgroundImage: 'url(/img/top.jpg)' }}
+      >
+        <div className="absolute inset-0 -top-1 bg-white/90"></div>
+        <div className="relative py-16 md:py-24">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl md:text-4xl font-black text-[#0D4F84] mb-12 text-center">
+              SPECIAL
+            </h2>
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-4 md:gap-8 text-lg md:text-xl text-[#0D4F84] place-items-center">
+              <a
+                href={romacoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/romaco.jpg"
+                  alt="ロマ子"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <a
+                href={yugienUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/yugien.jpg"
+                  alt="遊戯苑"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <a
+                href={aebUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/aeb.jpg"
+                  alt="AEB"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <a
+                href={yayUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/yay.jpg"
+                  alt="Yay!"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
+              <div className="w-full">
+                <img
+                  src="/img/logo/special.jpg"
+                  alt="SPECIAL"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* イベントスケジュール */}
+      <section
+        className="relative bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat bg-fixed bg-white"
+        style={{ backgroundImage: 'url(/img/top.jpg)' }}
+      >
+        <div className="absolute inset-0 -top-1 bg-white/90"></div>
+        <div className="relative py-16 md:py-24">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl md:text-4xl font-black text-[#0D4F84] mb-12 text-center">
+              イベントスケジュール
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+              {/* DAY 17 */}
+              <div className="bg-white/80 rounded-lg p-6 shadow-lg">
+                <h3 className="text-xl md:text-2xl font-bold text-[#2372B2] mb-6 text-center border-b-2 border-[#91C2E9] pb-3">DAY 17</h3>
+                <ul className="space-y-3 text-base md:text-lg text-[#0D4F84]">
+                  <li className="flex"><span className="font-bold min-w-[70px]">17:00</span><span>開場</span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">17:45</span><span>RELiC代表挨拶</span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">18:00</span><span></span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">19:00</span><span>FiNANCiE 『IEO NOW!』</span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">19:30</span><span>トークセッション『Web3の未来』</span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">20:30</span><span>プレゼント抽選会！</span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">21:00</span><span>閉場</span></li>
+                </ul>
+              </div>
+              {/* DAY 18 */}
+              <div className="bg-white/80 rounded-lg p-6 shadow-lg">
+                <h3 className="text-xl md:text-2xl font-bold text-[#2372B2] mb-6 text-center border-b-2 border-[#91C2E9] pb-3">DAY 18</h3>
+                <ul className="space-y-3 text-base md:text-lg text-[#0D4F84]">
+                  <li className="flex"><span className="font-bold min-w-[70px]">17:00</span><span>開場</span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">17:45</span><span>RELiC代表挨拶</span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">18:00</span><span></span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">19:00</span><span>FiNANCiE代表 國光氏 登壇 & 『IEO NOW!』</span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">20:00</span><span>Six & ブルー◯マー◯？</span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">20:30</span><span>プレゼント抽選会！</span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">21:00</span><span>閉場</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* イベントブース */}
+      <section
+        className="relative bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat bg-fixed bg-white"
+        style={{ backgroundImage: 'url(/img/top.jpg)' }}
+      >
+        <div className="absolute inset-0 -top-1 bg-white/90"></div>
+        <div className="relative py-16 md:py-24">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl md:text-4xl font-black text-[#0D4F84] mb-12 text-center">
+              イベントブース
+            </h2>
+            <div className="flex justify-center">
+              <img
+                src="/img/booth.jpg"
+                alt="RED° SKY STADIUM 平面図"
+                className="w-full max-w-3xl rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ディスプレイブース */}
+      <section
+        className="relative bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat bg-fixed bg-white"
+        style={{ backgroundImage: 'url(/img/top.jpg)' }}
+      >
+        <div className="absolute inset-0 -top-1 bg-white/90"></div>
+        <div className="relative py-16 md:py-24">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl md:text-4xl font-black text-[#0D4F84] mb-12 text-center">
+              ディスプレイブース
+            </h2>
+            <div className="flex justify-center">
+              <img
+                src="/img/display.jpg"
+                alt="RELiC THE TOWER ディスプレイブース"
+                className="w-full max-w-3xl rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>
