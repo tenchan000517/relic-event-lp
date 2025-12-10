@@ -143,21 +143,21 @@ export default function Home() {
               <div className="inline-block">
                 <ul className="space-y-4 text-lg md:text-xl text-[#0D4F84]">
                   <li className="flex items-start gap-3">
-                    <span className="text-[#2372B2] font-bold">✔︎</span>
-                    <span>ソフトドリンク&スナック無料<br className="md:hidden" /><span className="text-sm md:text-base text-gray-500 md:ml-2">(※アルコール ALL ¥500)</span></span>
+                    <span className="text-red-500 font-bold">✔︎</span>
+                    <span className="font-bold">ソフトドリンク&スナック無料<br className="md:hidden" /><span className="text-sm md:text-base text-gray-500 md:ml-2 font-normal">(※アルコール ALL ¥500)</span></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#2372B2] font-bold">✔︎</span>
-                    <span>ノベルティプレゼント</span>
+                    <span className="text-red-500 font-bold">✔︎</span>
+                    <span className="font-bold">ノベルティプレゼント</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#2372B2] font-bold">✔︎</span>
-                    <span>プレゼント抽選会</span>
+                    <span className="text-red-500 font-bold">✔︎</span>
+                    <span className="font-bold">プレゼント抽選会</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#2372B2] font-bold">✔︎</span>
+                    <span className="text-red-500 font-bold">✔︎</span>
                     <div>
-                      <span>もれなくもらえるFiNANCiE限定ポイント1000円分</span>
+                      <span className="font-bold">もれなくもらえるFiNANCiE限定ポイント1000円分</span>
                       <br className="md:hidden" /><span className="text-sm md:text-base text-gray-500 md:ml-2">(※要事前申請、12/15締切)</span>
                       <div className="mt-8 text-center">
                         <a
