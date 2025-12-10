@@ -158,15 +158,15 @@ export default function Home() {
                     <span className="text-[#2372B2] font-bold">✔︎</span>
                     <div>
                       <span>もれなくもらえるFiNANCiE限定ポイント1000円分</span>
-                      <span className="text-sm md:text-base text-gray-500 ml-2">(※要事前申請、12/15締切)</span>
+                      <br className="md:hidden" /><span className="text-sm md:text-base text-gray-500 md:ml-2">(※要事前申請、12/15締切)</span>
                       <div className="mt-8 text-center">
                         <a
                           href="https://docs.google.com/forms/d/e/1FAIpQLScyIx4yoXLoPl-7J5Xbd2EDK-6lLITrLRnMUPga8u6UK_-Ynw/viewform"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-[#2372B2] hover:bg-[#1d5a8f] rounded-lg shadow-md transition-all duration-300 hover:scale-105 active:scale-95"
+                          className="text-[#2372B2] underline underline-offset-2 decoration-2 hover:text-[#1d5a8f] transition-colors font-bold text-xl md:text-2xl"
                         >
-                          事前申請フォームはこちら
+                          要事前申請
                         </a>
                       </div>
                     </div>
