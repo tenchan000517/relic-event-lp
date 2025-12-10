@@ -128,6 +128,56 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 参加特典 */}
+      <section
+        className="relative bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat bg-fixed bg-white"
+        style={{ backgroundImage: 'url(/img/top.jpg)' }}
+      >
+        <div className="absolute inset-0 -top-1 bg-white/90"></div>
+        <div className="relative py-16 md:py-24">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl md:text-4xl font-black text-[#0D4F84] mb-4 md:mb-12 text-center">
+              参加特典
+            </h2>
+            <div className="bg-white/80 rounded-lg p-8 shadow-lg flex justify-center">
+              <div className="inline-block">
+                <ul className="space-y-4 text-lg md:text-xl text-[#0D4F84]">
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#2372B2] font-bold">✔︎</span>
+                    <span>ソフトドリンク&スナック無料<br className="md:hidden" /><span className="text-sm md:text-base text-gray-500 md:ml-2">(※アルコール ALL ¥500)</span></span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#2372B2] font-bold">✔︎</span>
+                    <span>ノベルティプレゼント</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#2372B2] font-bold">✔︎</span>
+                    <span>プレゼント抽選会</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#2372B2] font-bold">✔︎</span>
+                    <div>
+                      <span>もれなくもらえるFiNANCiE限定ポイント1000円分</span>
+                      <span className="text-sm md:text-base text-gray-500 ml-2">(※要事前申請、12/15締切)</span>
+                      <div className="mt-8 text-center">
+                        <a
+                          href="https://docs.google.com/forms/d/e/1FAIpQLScyIx4yoXLoPl-7J5Xbd2EDK-6lLITrLRnMUPga8u6UK_-Ynw/viewform"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-[#2372B2] hover:bg-[#1d5a8f] rounded-lg shadow-md transition-all duration-300 hover:scale-105 active:scale-95"
+                        >
+                          事前申請フォームはこちら
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 参加プロジェクト */}
       <section
         className="relative bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat bg-fixed bg-white"
@@ -406,6 +456,13 @@ export default function Home() {
               </a>
               <div className="w-full">
                 <img
+                  src="/img/logo/kunimitsu.jpg"
+                  alt="kunimitsu"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </div>
+              <div className="w-full">
+                <img
                   src="/img/logo/special.jpg"
                   alt="SPECIAL"
                   className="w-full aspect-square object-cover rounded-lg shadow-md"
@@ -433,10 +490,10 @@ export default function Home() {
                 <h3 className="text-xl md:text-2xl font-bold text-[#2372B2] mb-6 text-center border-b-2 border-[#91C2E9] pb-3">DAY 17</h3>
                 <ul className="space-y-3 text-base md:text-lg text-[#0D4F84]">
                   <li className="flex"><span className="font-bold min-w-[70px]">17:00</span><span>開場</span></li>
-                  <li className="flex"><span className="font-bold min-w-[70px]">17:45</span><span>RELiC代表挨拶</span></li>
-                  <li className="flex"><span className="font-bold min-w-[70px]">18:00</span><span></span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">18:00</span><span>RELiC代表挨拶</span></li>
                   <li className="flex"><span className="font-bold min-w-[70px]">19:00</span><span>FiNANCiE 『IEO NOW!』</span></li>
-                  <li className="flex"><span className="font-bold min-w-[70px]">19:30</span><span>トークセッション『Web3の未来』</span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">19:30</span><span>.kawii</span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">20:00</span><span>トークセッション『Web3の未来』</span></li>
                   <li className="flex"><span className="font-bold min-w-[70px]">20:30</span><span>プレゼント抽選会！</span></li>
                   <li className="flex"><span className="font-bold min-w-[70px]">21:00</span><span>閉場</span></li>
                 </ul>
@@ -446,8 +503,7 @@ export default function Home() {
                 <h3 className="text-xl md:text-2xl font-bold text-[#2372B2] mb-6 text-center border-b-2 border-[#91C2E9] pb-3">DAY 18</h3>
                 <ul className="space-y-3 text-base md:text-lg text-[#0D4F84]">
                   <li className="flex"><span className="font-bold min-w-[70px]">17:00</span><span>開場</span></li>
-                  <li className="flex"><span className="font-bold min-w-[70px]">17:45</span><span>RELiC代表挨拶</span></li>
-                  <li className="flex"><span className="font-bold min-w-[70px]">18:00</span><span></span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">18:00</span><span>RELiC代表挨拶</span></li>
                   <li className="flex"><span className="font-bold min-w-[70px]">19:00</span><span>FiNANCiE代表 國光氏 登壇 & 『IEO NOW!』</span></li>
                   <li className="flex"><span className="font-bold min-w-[70px]">20:00</span><span>Six & ブルー◯マー◯？</span></li>
                   <li className="flex"><span className="font-bold min-w-[70px]">20:30</span><span>プレゼント抽選会！</span></li>
