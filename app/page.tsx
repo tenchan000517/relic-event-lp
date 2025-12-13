@@ -20,10 +20,11 @@ export default function Home() {
   const jonyUrl = "https://x.com/ks3901ks?s=21"; // ジョニー
   const crowmakerUrl = "https://x.com/crowmakerjp"; // CROW Maker
   const coinmusumeUrl = "https://linktr.ee/coinmusme1"; // coinmusume
-  const yayUrl = "https://portal.yay.space/ja"; // Yay!
+  const yayUrl = "https://x.com/yay_jp?s=21"; // Yay!
   const heal3Url = "https://heal3.com/"; // HEAL3
   const kazmaiUrl = "https://lit.link/kazmai"; // kazmai
   const worldUrl = "https://world.org/ja-jp"; // World
+  const fukustaUrl = "https://x.com/fukusta343?s=21"; // fukusta
 
   return (
     <div className="min-h-screen bg-white">
@@ -135,43 +136,69 @@ export default function Home() {
       >
         <div className="absolute inset-0 -top-1 bg-white/90"></div>
         <div className="relative py-16 md:py-24">
-          <div className="container mx-auto px-4 max-w-4xl">
+          <div className="container mx-auto px-2 md:px-4 max-w-4xl">
             <h2 className="text-2xl md:text-4xl font-black text-[#0D4F84] mb-4 md:mb-12 text-center">
               参加特典
             </h2>
-            <div className="bg-white/80 rounded-lg p-8 shadow-lg flex justify-center">
-              <div className="inline-block">
-                <ul className="space-y-4 text-lg md:text-xl text-[#0D4F84]">
-                  <li className="flex items-start gap-3">
-                    <span className="text-red-500 font-bold">✔︎</span>
-                    <span className="font-bold">ソフトドリンク&スナック無料<br className="md:hidden" /><span className="text-sm md:text-base text-gray-500 md:ml-2 font-normal">(※アルコール ALL ¥500)</span></span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-red-500 font-bold">✔︎</span>
-                    <span className="font-bold">ノベルティプレゼント</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-red-500 font-bold">✔︎</span>
-                    <span className="font-bold">プレゼント抽選会</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-red-500 font-bold">✔︎</span>
-                    <div>
-                      <span className="font-bold">もれなくもらえるFiNANCiE限定ポイント1000円分</span>
-                      <br className="md:hidden" /><span className="text-sm md:text-base text-gray-500 md:ml-2">(※要事前申請、12/15締切)</span>
-                      <div className="mt-8 text-center">
-                        <a
-                          href="https://docs.google.com/forms/d/e/1FAIpQLScyIx4yoXLoPl-7J5Xbd2EDK-6lLITrLRnMUPga8u6UK_-Ynw/viewform"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-[#2372B2] underline underline-offset-2 decoration-2 hover:text-[#1d5a8f] transition-colors font-bold text-xl md:text-2xl"
-                        >
-                          要事前申請
-                        </a>
+            <div className="bg-white/80 rounded-lg py-8 px-4 md:px-8 shadow-lg">
+              <div className="flex justify-center">
+                <div className="inline-block">
+                  <ul className="space-y-4 text-[22px] md:text-2xl text-[#0D4F84]">
+                    <li className="flex items-start gap-3">
+                      <span className="text-red-500 font-bold">✔︎</span>
+                      <span className="font-bold">ソフトドリンク&スナック無料<br className="md:hidden" /><span className="text-sm md:text-base text-gray-500 md:ml-2 font-normal">(※アルコール ALL ¥500)</span></span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-red-500 font-bold">✔︎</span>
+                      <span className="font-bold">ノベルティプレゼント</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-red-500 font-bold">✔︎</span>
+                      <div>
+                        <span className="font-bold">もれなくもらえる！<br />FiNANCiE限定ポイント1000円分</span>
+                        <br className="md:hidden" /><span className="text-sm md:text-base text-gray-500 md:ml-2">(<a href="https://docs.google.com/forms/d/e/1FAIpQLScyIx4yoXLoPl-7J5Xbd2EDK-6lLITrLRnMUPga8u6UK_-Ynw/viewform" target="_blank" rel="noopener noreferrer" className="text-[#2372B2] underline underline-offset-2 decoration-1 hover:text-[#1d5a8f] transition-colors">※要事前申請</a>、12/15締切)</span>
                       </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-red-500 font-bold">✔︎</span>
+                      <span className="font-bold">プレゼント抽選会</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {/* 抽選会景品 */}
+              <div className="mt-3">
+                <div className="grid grid-cols-3 md:grid-cols-4 gap-x-2 gap-y-2 md:gap-8 md:max-w-2xl md:mx-auto items-end">
+                  <div className="w-full flex flex-col">
+                    <p className="text-[#0D4F84] font-bold text-[10px] md:text-sm mb-2 h-8 md:h-10 flex items-end justify-center text-center">$villain ART</p>
+                    <img
+                      src="/img/present1.jpg"
+                      alt="$villain ART"
+                      className="w-full aspect-square object-cover rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div className="w-full flex flex-col">
+                    <p className="text-[#0D4F84] font-bold text-[10px] md:text-sm mb-2 h-8 md:h-10 flex items-end justify-center text-center">罵尻ロマ子<br className="md:hidden" /> Original Goods</p>
+                    <img
+                      src="/img/present2.jpg"
+                      alt="罵尻ロマ子 Original Goods"
+                      className="w-full aspect-square object-cover rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div className="w-full flex flex-col">
+                    <p className="text-[#0D4F84] font-bold text-[10px] md:text-sm mb-2 h-8 md:h-10 flex items-end justify-center text-center">RELiC トークン</p>
+                    <img
+                      src="/img/present3.jpg"
+                      alt="RELiC トークン"
+                      className="w-full aspect-square object-cover rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div className="w-full">
+                    <div className="w-full aspect-square bg-[#91C2E9]/30 rounded-lg shadow-md flex items-center justify-center">
+                      <span className="text-[#2372B2] font-bold text-xs md:text-base">More coming!</span>
                     </div>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -461,6 +488,18 @@ export default function Home() {
                   className="w-full aspect-square object-cover rounded-lg shadow-md"
                 />
               </div>
+              <a
+                href={fukustaUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105 w-full"
+              >
+                <img
+                  src="/img/logo/fukusta.jpg"
+                  alt="fukusta"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+              </a>
               <div className="w-full">
                 <img
                   src="/img/logo/special.jpg"
@@ -492,7 +531,7 @@ export default function Home() {
                   <li className="flex"><span className="font-bold min-w-[70px]">17:00</span><span>開場</span></li>
                   <li className="flex"><span className="font-bold min-w-[70px]">18:00</span><span>RELiC代表挨拶</span></li>
                   <li className="flex"><span className="font-bold min-w-[70px]">19:00</span><span>FiNANCiE 『IEO NOW!』</span></li>
-                  <li className="flex"><span className="font-bold min-w-[70px]">19:30</span><span>.kawii</span></li>
+                  <li className="flex"><span className="font-bold min-w-[70px]">19:30</span><span>.kawaii</span></li>
                   <li className="flex"><span className="font-bold min-w-[70px]">20:00</span><span>トークセッション『Web3の未来』</span></li>
                   <li className="flex"><span className="font-bold min-w-[70px]">20:30</span><span>プレゼント抽選会！</span></li>
                   <li className="flex"><span className="font-bold min-w-[70px]">21:00</span><span>閉場</span></li>
